@@ -26,10 +26,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include "../../common/include/types.h"
+
 #ifndef _NUMATOP_POWERPC_TYPES_H
 #define _NUMATOP_POWERPC_TYPES_H
 
-#include "../../common/include/types.h"
 
 #define CORP "IBM"
 

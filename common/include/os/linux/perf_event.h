@@ -14,9 +14,22 @@
 #ifndef _UAPI_LINUX_PERF_EVENT_H
 #define _UAPI_LINUX_PERF_EVENT_H
 
-#include <linux/types.h>
-#include <linux/ioctl.h>
-#include <asm/byteorder.h>
+#include <stdint.h>
+typedef int32_t __s32;
+typedef uint32_t __u32;
+
+typedef int64_t __s64;
+typedef uint64_t __u64;
+
+
+typedef uint8_t __u8;
+typedef int8_t __s8;
+
+typedef uint16_t __u16;
+typedef int16_t __s16;
+
+#include <sys/ioctl.h>
+#include <libkern/OSByteOrder.h>
 
 /*
  * User-space ABI bits:

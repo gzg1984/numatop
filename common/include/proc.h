@@ -72,7 +72,7 @@ typedef struct _track_proc {
 	int intval_ms;
 	uint64_t key;
 	map_proc_t map;
-	sym_t sym;
+	//sym_t sym;
 	count_value_t *countval_arr;
 	perf_countchain_t count_chain;
 	perf_llrecgrp_t llrec_grp;

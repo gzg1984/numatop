@@ -110,7 +110,7 @@ proc_free(track_proc_t *proc)
 	}
 
 	(void) map_proc_fini(proc);
-	sym_free(&proc->sym);
+	//sym_free(&proc->sym);
 	perf_countchain_reset(&proc->count_chain);
 	perf_llrecgrp_reset(&proc->llrec_grp);
 

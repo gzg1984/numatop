@@ -25,7 +25,6 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-
 #include <stdio.h>
 #include <stddef.h>
 #include <string.h>
@@ -36,7 +35,12 @@
 #include "include/power8.h"
 #include "include/power9.h"
 
-pfn_plat_profiling_config_t
+
+#ifndef _PLAT_H_
+#define _PLAT_H_
+
+
+extern pfn_plat_profiling_config_t
 s_plat_profiling_config[CPU_TYPE_NUM] = {
 	NULL,
 	power8_profiling_config,
@@ -89,3 +93,5 @@ plat_detect(void)
 
 	return ret;
 }
+#endif
+
